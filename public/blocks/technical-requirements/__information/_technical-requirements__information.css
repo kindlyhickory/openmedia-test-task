@@ -1,0 +1,5 @@
+.technical-requirements__information {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}

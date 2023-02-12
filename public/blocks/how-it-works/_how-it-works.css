@@ -1,0 +1,7 @@
+.how-it-works {
+  display: flex;
+  flex-direction: row;
+  margin-top: 120px;
+  gap: 36px;
+  padding: 0 40px;
+}

@@ -1,0 +1,7 @@
+.content {
+  max-width: 1440px;
+  display: block;
+  margin: 0 auto;
+  padding: 12px;
+  box-sizing: border-box;
+}

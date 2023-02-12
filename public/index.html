@@ -2,42 +2,118 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+    <link rel="stylesheet" href="index.css">
+    <title>OpenMedia test task</title>
+    <link rel="stylesheet" href="./pages/index.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <body class="page">
+    <main class="content">
+      <section class="play-audio">
+        <h1 class="play-audio__title">Play any audio sources directly in the browser!</h1>
+        <div class="play-audio__player-container player-container">
+          <p class="player-container__title">Insert the link</p>
+          <div class="player-container__block"></div>
+        </div>
+        <div class="play-audio__information-container">
+          <p class="play-audio__subtitle">Without any restrictions for free</p>
+          <div class="play-audio__terms-container">
+            <p class="play-audio__agreement">By uploading the audio file, you agree to our</p>
+            <p class="play-audio__terms">Terms of Service.</p>
+          </div>
+        </div>
+      </section>
+      <section class="how-it-works">
+        <div class="how-it-works__information">
+          <h2 class="how-it-works__title">
+            How It Works
+          </h2>
+          <p class="how-it-works__subtitle">
+            Lorem Ipsum is a "fish" text often used in print and web design. Lorem Ipsum has been the standard "fish" for Latin texts since the early 16th century. At that time, an unnamed printer created a large collection of font sizes and shapes, using Lorem Ipsum for print samples.
+          </p>
+        </div>
+        <div class="how-it-works__scheme">
+          <div class="how-it-works__head"></div>
+          <img class="how-it-works__line" src="./images/line.svg">
+          <div class="how-it-works__deps">
+            <div class="how-it-works__item how-it-works__item_amazon"></div>
+            <div class="how-it-works__item how-it-works__item_cloud"></div>
+          </div>
+        </div>
+      </section>
+      <section class="technical-requirements">
+        <h2 class="technical-requirements__title">Technical-requirements</h2>
+        <div class="technical-requirements__pagination swiper-pagination-current">
+          <p class="technical-requirements__pagination-el technical-requirements__pagination-el_active">Own server</p>
+          <p class="technical-requirements__pagination-el">Amazon Instance</p>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="technical-requirements__information swiper-slide">
+              <div class="technical-requirements__parameters-block">
+                <div class="technical-requirements__item">
+                  <p class="technical-requirements__parameter technical-requirements__parameter-text">OS + apps</p>
+                  <p class="technical-requirements__parameter-value technical-requirements__parameter-text">Unix/OSX + docker + nvidia-docker</p>
+                </div>
+                <div class="technical-requirements__item">
+                  <p class="technical-requirements__parameter technical-requirements__parameter-text">CPU</p>
+                  <p class="technical-requirements__parameter-value technical-requirements__parameter-text">4 cores or more (e.g. intel core i5)</p>
+                </div>
+                <div class="technical-requirements__item">
+                  <p class="technical-requirements__parameter technical-requirements__parameter-text">Memory</p>
+                  <p class="technical-requirements__parameter-value technical-requirements__parameter-text">16 GB RAM</p>
+                </div>
+              </div>
+              <div class="technical-requirements__parameters-block">
+                <div class="technical-requirements__item">
+                  <p class="technical-requirements__parameter technical-requirements__parameter-text">Free space</p>
+                  <p class="technical-requirements__parameter-value technical-requirements__parameter-text">100 GB of free space</p>
+                </div>
+                <div class="technical-requirements__item">
+                  <p class="technical-requirements__parameter technical-requirements__parameter-text">Graphics hardware</p>
+                  <p class="technical-requirements__parameter-value technical-requirements__parameter-text">GPU: NVidia only 2Gb+</p>
+                </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+              </div>
+            </div>
+            <div class="technical-requirements__information swiper-slide">
+              <div class="technical-requirements__parameters-block">
+                <div class="technical-requirements__item">
+                  <p class="technical-requirements__parameter technical-requirements__parameter-text">Instance</p>
+                  <p class="technical-requirements__parameter-value technical-requirements__parameter-text">g4dn.xlarge</p>
+                </div>
+                <div class="technical-requirements__item">
+                  <p class="technical-requirements__parameter technical-requirements__parameter-text">GPU</p>
+                  <p class="technical-requirements__parameter-value technical-requirements__parameter-text">1</p>
+                </div>
+                <div class="technical-requirements__item">
+                  <p class="technical-requirements__parameter technical-requirements__parameter-text">vCPUs</p>
+                  <p class="technical-requirements__parameter-value technical-requirements__parameter-text">4</p>
+                </div>
+              </div>
+              <div class="technical-requirements__parameters-block">
+                <div class="technical-requirements__item">
+                  <p class="technical-requirements__parameter technical-requirements__parameter-text">Memory</p>
+                  <p class="technical-requirements__parameter-value technical-requirements__parameter-text">16 GB RAM</p>
+                </div>
+                <div class="technical-requirements__item">
+                  <p class="technical-requirements__parameter technical-requirements__parameter-text">Storage</p>
+                  <p class="technical-requirements__parameter-value technical-requirements__parameter-text">125 GB</p>
+                </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="audio-container"></div>
+    <script src="
+      https://cdn.jsdelivr.net/npm/swiper@9.0.4/swiper-bundle.min.js
+    "></script>
+    <script src="./scripts/swiper.js"></script>
   </body>
 </html>

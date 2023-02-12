@@ -1,0 +1,10 @@
+.technical-requirements__pagination-el {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  cursor: pointer;
+  color: #CFD3D6;
+  opacity: 0.4;
+}

@@ -1,0 +1,10 @@
+.page {
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+    font-family: 'Space Grotesk', Arial, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background-color: #1B191C;
+}

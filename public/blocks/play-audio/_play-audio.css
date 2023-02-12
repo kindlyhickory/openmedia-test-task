@@ -1,0 +1,7 @@
+.play-audio {
+  padding: 40px;
+  background-color: #EEE;
+  display: grid;
+  grid-template-columns: 36.82% auto;
+  column-gap: 112px;
+}

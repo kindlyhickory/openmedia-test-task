@@ -1,0 +1,10 @@
+.technical-requirements__item {
+  display: grid;
+  grid-template-columns: 38.88% 61.18%;
+  padding: 12px 0 11px 0;
+  border-bottom: 1px solid rgba(207, 211, 214, 0.1);
+  box-sizing: border-box;
+}
+.technical-requirements__item:last-child {
+  border-bottom: none;
+}

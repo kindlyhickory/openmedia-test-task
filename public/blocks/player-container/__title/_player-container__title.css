@@ -1,0 +1,12 @@
+.player-container__title {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: -0.4px;
+
+  color: #1B191C;
+}

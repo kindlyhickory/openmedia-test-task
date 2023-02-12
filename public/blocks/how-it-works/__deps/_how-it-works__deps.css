@@ -1,0 +1,7 @@
+.how-it-works__deps {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-between;
+  gap: 25px;
+}
