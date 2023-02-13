@@ -1,3 +1,9 @@
 .technical-requirements__parameters-block {
   width: 48.2%;
 }
+
+@media screen and (max-width: 880px){
+  .technical-requirements__parameters-block {
+    width: 100%;
+  }
+}

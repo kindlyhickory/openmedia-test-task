@@ -3,3 +3,11 @@
   flex-direction: row;
   gap: 48px;
 }
+
+@media screen and (max-width: 880px){
+  .technical-requirements__information {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+  }
+}

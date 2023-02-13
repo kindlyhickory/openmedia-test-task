@@ -3,3 +3,9 @@
   flex-direction: column;
   max-width: 672px;
 }
+
+@media screen and (max-width: 910px){
+  .how-it-works__information  {
+    max-width: 100%;
+  }
+}

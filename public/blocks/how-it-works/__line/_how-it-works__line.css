@@ -1,3 +1,21 @@
 .how-it-works__line {
-  max-width: 426px;
+  background-image: url("../../../../images/line.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 426px;
+}
+
+@media screen and (max-width: 1280px){
+  .how-it-works__line  {
+    max-width: 326px;
+  }
+}
+
+
+@media screen and (max-width: 560px){
+  .how-it-works__line  {
+    background-image: url("../../../../images/line_mobile.svg");
+    width:187px;
+  }
 }

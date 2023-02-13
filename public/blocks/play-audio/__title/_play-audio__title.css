@@ -7,3 +7,31 @@
   letter-spacing: -1px;
   color: #000000;
 }
+
+@media screen and (max-width: 1280px){
+  .play-audio__title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .play-audio__title {
+    font-size: 52px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .play-audio__title {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .play-audio__title {
+    font-size: 36px;
+    line-height: 110%;
+    letter-spacing: -0.4px;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+}

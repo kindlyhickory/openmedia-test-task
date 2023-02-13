@@ -5,10 +5,27 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 32px;
-  /* identical to box height, or 133% */
-
   letter-spacing: -0.4px;
-
   color: #1B191C;
   margin-top: 24px;
 }
+
+@media screen and (max-width: 1280px){
+  .play-audio__subtitle {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .play-audio__subtitle {
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #1B191C;
+  }
+}
+
+
+
+
