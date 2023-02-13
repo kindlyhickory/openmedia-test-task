@@ -4,10 +4,25 @@
   font-weight: 400;
   font-size: 48px;
   line-height: 52px;
-  /* identical to box height, or 108% */
-
   letter-spacing: -1px;
-
   color: #F5F6F7;
   margin: 0 0 40px 0;
+}
+
+@media screen and (max-width: 768px){
+  .how-it-works__title {
+    font-size: 42px;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .how-it-works__title {
+    margin: 0 0 20px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 110%;
+    letter-spacing: -0.4px;
+  }
 }

@@ -1,4 +1,18 @@
 .technical-requirements {
-  margin-top: 120px;
-  padding: 0 40px 40px 40px;
+  padding: 120px 40px 40px 40px;
 }
+
+
+
+@media screen and (max-width: 1024px){
+  .technical-requirements {
+    padding: 80px 40px 40px 40px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .technical-requirements {
+    padding: 120px 12px 40px 12px;
+  }
+}
+

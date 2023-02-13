@@ -4,4 +4,19 @@
   background-color: #323033;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
+}
+
+@media screen and (max-width: 1280px){
+  .how-it-works__item  {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .how-it-works__item {
+    width: 60px;
+    height: 60px
+  }
 }

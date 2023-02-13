@@ -8,3 +8,8 @@
 .technical-requirements__item:last-child {
   border-bottom: none;
 }
+@media screen and (max-width: 480px){
+  .technical-requirements__item {
+    grid-template-columns: 1fr;
+  }
+}

@@ -4,3 +4,19 @@
   background-color: #F8D231;
   align-self: center;
 }
+
+
+@media screen and (max-width: 1280px){
+  .how-it-works__head {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .how-it-works__head {
+    width: 50px;
+    height: 50px
+  }
+}
+

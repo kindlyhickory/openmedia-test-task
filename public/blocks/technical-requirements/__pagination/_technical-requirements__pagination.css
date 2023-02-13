@@ -4,3 +4,12 @@
   gap: 16px;
   margin-bottom: 35px;
 }
+
+@media screen and (max-width: 380px){
+  .technical-requirements__pagination {
+    display: grid;
+    align-items: end;
+    max-width: 296px;
+    grid-template-columns: 42.22% 52.36%;
+  }
+}

@@ -5,3 +5,22 @@
   grid-template-columns: 36.82% auto;
   column-gap: 112px;
 }
+
+@media screen and (max-width: 1280px){
+  .play-audio {
+    column-gap: 60px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .play-audio {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .play-audio  {
+    padding: 20px 12px 20px 12px;
+  }
+}
+

@@ -3,3 +3,11 @@
   grid-column: 2/3;
   transform: translate(0, -25px);
 }
+
+@media screen and (max-width: 1024px){
+  .player-container {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    transform: none;
+  }
+}

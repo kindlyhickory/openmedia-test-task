@@ -7,7 +7,7 @@ const techSwiper = new Swiper('.swiper', {
     bulletClass: 'technical-requirements__pagination-el',
     bulletActiveClass: 'technical-requirements__pagination-el_active',
     renderBullet: function (index, className) {
-      return `<span class="${className}">${index === 0 ? 'Our servers' : 'Amazon Instance'}</span>`;
+      return `<span class="${className}">${index === 0 ? 'Own server' : 'Amazon Instance'}</span>`;
     },
   }
 })
