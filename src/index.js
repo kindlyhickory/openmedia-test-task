@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import AudioPlayer from "./components/audio-player/audio-player";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('player-container-react'));
 root.render(
-    <h1>123</h1>
+    <AudioPlayer/>
 );

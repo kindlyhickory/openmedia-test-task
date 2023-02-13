@@ -1,0 +1,67 @@
+.input_container {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+}
+
+.error {
+  font-family: 'Space Grotesk';
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  margin-top: -20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.3px;
+  color: #C6A827;
+}
+
+.input_label {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  color: #1B191C;
+}
+
+.url_input {
+  width: 524px;
+  height: 96px;
+  border: none;
+  box-sizing: border-box;
+  padding-left: 16px;
+  background: #FFFFFF;
+}
+
+.url_input:focus {
+  border:none;
+  outline: none;
+}
+
+.url_input_type_error, .url_input_type_error:focus {
+  border: 0.5px solid #C6A827;
+  background: #FFFFFF url("../../images/warning.svg") no-repeat;
+  background-position: top 36px right 16px;
+}
+
+.input_submit {
+  width: 96px;
+  height: 96px;
+  background: #F8D231 url("../../images/submit_arrow.svg") no-repeat center;
+  border:none;
+  outline: none;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1280px){
+  .input_label {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
