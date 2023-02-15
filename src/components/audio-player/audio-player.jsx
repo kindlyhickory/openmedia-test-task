@@ -1,43 +1,109 @@
-import React, {useState} from 'react';
-import styles from "./audio-player.module.css"
-import { useForm } from "react-hook-form";
+import React, { useState, useRef, useEffect } from 'react'
+import styles from "./audio-player.module.css";
+import play from "../../images/play.svg"
+import pause from "../../images/pause.svg"
+import { BsArrowLeftShort } from "react-icons/bs"
+import { BsArrowRightShort } from "react-icons/bs"
+import { FaPlay } from "react-icons/fa"
+import { FaPause } from "react-icons/fa"
+import {useDispatch, useSelector} from "react-redux";
+import {audioSlice} from "../../store/reducers/audioSlice";
 
 const AudioPlayer = () => {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
 
-  const [value, setValue] = useState('');
+  const dispatch = useDispatch();
 
-  console.log(watch("url"));
+  const { backToInput } = audioSlice.actions;
 
-  const onSubmit = data => console.log(data);
+  const { audioLink } = useSelector(state => state.audio);
 
-  // const audio = new Audio("https://lalalai.s3.us-west-2.amazonaws.com/media/split/a7564eb8-cbf2-40e2-9cb8-6061d8d055a7/no_vocals");
+  const audioPlayer = useRef();
+  const progressBar = useRef();
+  const animationRef = useRef();
+  const volumeBar= useRef();
+
+  useEffect(() => {
+    const seconds = Math.floor(audioPlayer.current.duration);
+    progressBar.current.max = seconds;
+    changeVolume();
+    progressBar.current.style.setProperty('--seek-before-width', `${progressBar.current.value / Math.floor(audioPlayer.current.duration) * 100}%`)
+    changeVolumeCurrentValue();
+  }, [audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
+
+  const calculateTime = (secs) => {
+    const minutes = Math.floor(secs / 60);
+    const returnedMinutes = minutes < 10 ? `0${minutes}` : `${minutes}`;
+    const seconds = Math.floor(secs % 60);
+    const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
+    return `${returnedMinutes}:${returnedSeconds}`;
+  }
+
+  const togglePlayPause = () => {
+    const prevValue = isPlaying;
+    setIsPlaying(!prevValue);
+    if (!prevValue) {
+      audioPlayer.current.play();
+      animationRef.current = requestAnimationFrame(whilePlaying)
+    } else {
+      audioPlayer.current.pause();
+      cancelAnimationFrame(animationRef.current);
+    }
+  }
+  const whilePlaying = () => {
+    if (isFinite(audioPlayer.current.duration)) {
+      progressBar.current.value = audioPlayer.current.currentTime;
+    } else {
+      progressBar.current.value = 0;
+    }
+    changePlayerCurrentTime();
+    animationRef.current = requestAnimationFrame(whilePlaying);
+  }
+  const changeVolume = () => {
+    audioPlayer.current.volume = volumeBar.current.value/100;
+    changeVolumeCurrentValue()
+  }
+
+
+  const changeRange = () => {
+    audioPlayer.current.currentTime = progressBar.current.value;
+    changePlayerCurrentTime();
+  }
+
+  const changePlayerCurrentTime = () => {
+    progressBar.current.style.setProperty('--seek-before-width', `${progressBar.current.value / Math.floor(audioPlayer.current.duration) * 100}%`)
+    if (isFinite(audioPlayer.current.duration)) {
+      setCurrentTime(progressBar.current.value);
+    } else {
+      setCurrentTime(audioPlayer.current.currentTime);
+    }
+  }
+
+  const changeVolumeCurrentValue = () => {
+    volumeBar.current.style.setProperty('--seek-before-volume-width', `${volumeBar.current.value}%`)
+  }
 
   return (
-    <>
-      <form onSubmit={handleSubmit(onSubmit)} id="audio-form">
-        <label className={styles.input_label} htmlFor="audio">Insert the link</label>
-        <div className={styles.input_container}>
-          <input
-            value={value}
-            placeholder="https://"
-            {...register("url", {
-              onChange: (e) => setValue(e.target.value),
-              required: 'Укажите',
-              pattern: {
-                value: /^https?:\/\/(www\.)?[\w-\\.]+\.[a-z]{2,3}[\w-._~:/?#[\]@!$&'()*+,;=]*#?/,
-                message: 'Некорректная ссылка'
-              }
-            })}
-            id="audio"
-            className={`${styles.url_input} ${errors.url && styles.url_input_type_error}`}
-          />
-          {errors.url && <span className={styles.error}>Error message here</span>}
-          <input value="" type="submit" form="audio-form" className={styles.input_submit}/>
+    <div className={styles.audioPlayerContainer}>
+      <span className={styles.backButton} onClick={() => dispatch(backToInput())}>← Back</span>
+      <div className={styles.audioPlayer}>
+        <audio ref={audioPlayer} src={audioLink} preload="metadata"></audio>
+        <input type="image" src={isPlaying ? pause : play} onClick={togglePlayPause} className={styles.playPause}>
+        </input>
+        <div className={styles.progressBarContainer}>
+          <input type="range" className={styles.progressBar} defaultValue="0" min="0" ref={progressBar} onChange={changeRange} />
         </div>
-      </form>
-    </>
-  )
-};
+        <div className={styles.durationVolumeContainer}>
+          <div className={styles.currentTime}>{calculateTime(currentTime)}</div>
+          <div className={styles.volumeBarContainer}>
+            <input type="range" className={styles.volumeBar} defaultValue="10" min="0" max="100" ref={volumeBar} onChange={changeVolume} />
+          </div>
+        </div>
+      </div>
+  </div>
 
-export default AudioPlayer;
+  )
+}
+
+export default AudioPlayer

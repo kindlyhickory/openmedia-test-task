@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import AudioPlayer from "./components/audio-player/audio-player";
+import { Provider} from "react-redux";
+import {setupStore} from "./store/store";
+import App from "./components/app/app";
+
+const store = setupStore();
 
 const root = ReactDOM.createRoot(document.getElementById('player-container-react'));
 root.render(
-    <AudioPlayer/>
+  <Provider store={store}>
+    <App/>
+  </Provider>
 );
