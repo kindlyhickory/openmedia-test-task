@@ -56,8 +56,19 @@
 
 .volumeBarContainer {
   position: relative;
+  display: flex;
   width: 252px;
   height: 2px;
+}
+
+.mutedLabel {
+  position: absolute;
+  top: -20px;
+}
+
+.radioLabel {
+  position: absolute;
+  top: -20px;
 }
 
 @media screen and (max-width: 768px){
@@ -93,6 +104,9 @@
   display: flex;
   flex-direction: column;
 }
+.playAndLoadContainer {
+  align-self: flex-start;
+}
 
 .backButton {
   font-family: 'Space Grotesk';
@@ -105,6 +119,9 @@
   margin-bottom: 20px;
   cursor: pointer;
   transition: opacity .2s linear;
+  border:none;
+  padding: 0;
+  max-width: 80px;
 }
 
 .backButton:hover {

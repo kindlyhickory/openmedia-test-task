@@ -1,6 +1,5 @@
 
 import {audioSlice} from "../reducers/audioSlice";
-import axios from "axios";
 import {modalSlice} from "../reducers/modalSlice";
 
 export const checkAudioLink = (value) => dispatch => {
@@ -8,7 +7,7 @@ export const checkAudioLink = (value) => dispatch => {
   fetch(value)
     .then(res => {
       console.log(res);
-      if (res.status === 200) {
+      if (res.ok && res.headers.get('Content-type').startsWith('audio')) {
         dispatch(audioSlice.actions.checkingAudioSuccess(value));
       } else {
         return Promise.reject({message: 'Invalid audio-link'})
@@ -17,6 +16,6 @@ export const checkAudioLink = (value) => dispatch => {
     .catch(err => {
       console.log(err);
       dispatch(audioSlice.actions.checkingAudioError())
-      dispatch(modalSlice.actions.showModal(err.message));
+      dispatch(modalSlice.actions.showModal('Invalid audio-link'));
     })
 }

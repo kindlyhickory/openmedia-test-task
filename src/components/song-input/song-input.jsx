@@ -5,6 +5,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {audioSlice} from "../../store/reducers/audioSlice";
 import {inputSlice} from "../../store/reducers/inputSlice";
 import {checkAudioLink} from "../../store/actions/audio";
+import {LINK_REGULAR} from "../../constants/regulars";
 
 const SongInput = () => {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -36,7 +37,7 @@ const SongInput = () => {
               onChange: (e) => handleChange(e),
               required: 'Input is required',
               pattern: {
-                value: /^https?:\/\/(www\.)?[\w-\\.]+\.[a-z]{2,3}[\w-._~:/?#[\]@!$&'()*+,;=]*#?/,
+                value: LINK_REGULAR,
                 message: 'Incorrect Link'
               }
             })}
