@@ -23,13 +23,12 @@
   position: absolute;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 8px 0 8px;
   top: 100%;
   background: #FFFFFF;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   max-width: 524px;
   width: 100%;
-  padding: 8px;
   box-sizing: border-box;
 }
 
@@ -58,11 +57,12 @@
 }
 
 .autoCompleteListItem:first-child {
-  padding: 0 0 12px 0
+  padding: 8px 0 12px 0
 }
 
 .autoCompleteListItem:last-child {
   border-bottom: none;
+  padding-bottom: 8px;
 }
 
 .input_label {
@@ -94,26 +94,26 @@
 }
 
 @media screen and (max-width: 1280px){
-  .url_input {
+  .url_input, .autoCompleteList {
     width: 440px;
   }
 }
 
 @media screen and (max-width: 1024px){
-  .url_input {
+  .url_input, .autoCompleteList {
     width: 524px;
   }
 }
 
 @media screen and (max-width: 768px){
-  .url_input {
+  .url_input{
     width: 280px;
     height: 64px;
   }
 }
 
 @media screen and (max-width: 480px){
-  .url_input {
+  .url_input, .autoCompleteList {
     width: 232px;
   }
 }
