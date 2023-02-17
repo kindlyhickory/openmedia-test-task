@@ -17,6 +17,7 @@
   line-height: 16px;
   letter-spacing: -0.3px;
   color: #C6A827;
+  z-index: 1;
 }
 
 .autoCompleteList {
@@ -30,6 +31,7 @@
   max-width: 524px;
   width: 100%;
   box-sizing: border-box;
+  z-index: 2;
 }
 
 .autoCompleteListItem {

@@ -44,7 +44,6 @@ const SongInput = () => {
             ref={inputRef}
             {...register("url", {
               onChange: (e) => handleChange(e),
-              required: 'Input is required',
               pattern: {
                 value: LINK_REGULAR,
                 message: 'Incorrect Link'
