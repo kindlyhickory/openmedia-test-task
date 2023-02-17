@@ -7,15 +7,15 @@ import Modal from "../modal/modal";
 
 const App = () => {
 
-  const { isRequestCheck, isErrorCheck, audioLink } = useSelector(state => state.audio);
+  const { isRequestCheck, isErrorCheck, mediaLink } = useSelector(state => state.audio);
 
   const { isErrorModalOpened } = useSelector(state => state.errorModal);
 
   return (<>
       {
-        audioLink.length && !isRequestCheck && !isErrorCheck
+        mediaLink.length && !isRequestCheck && !isErrorCheck
         ? <AudioPlayer/>
-        : !audioLink.length && !isRequestCheck
+        : !mediaLink.length && !isRequestCheck
           ? <SongInput/>
           : <Loader/>
       }

@@ -3,7 +3,9 @@ import {createSlice} from "@reduxjs/toolkit";
 const initialState = {
   isRequestCheck: false,
   isErrorCheck: false,
-  audioLink: '',
+  isAudio: false,
+  isVideo: false,
+  mediaLink: '',
   isPlaying: false,
   currentTime: 0,
   volume: 5,
@@ -37,27 +39,48 @@ export const audioSlice = createSlice({
     backToInput(state) {
       state.isRequestCheck = false
       state.isErrorCheck = false
-      state.audioLink = ''
+      state.mediaLink = ''
       state.isPlaying = false
       state.currentTime = 0
       state.isRadio = false
       state.readyState = true
     },
-    checkingAudioRequest(state) {
+    checkingMediaRequest(state, action) {
       state.isRequestCheck = true
       state.isErrorCheck = false
-      state.audioLink = '';
+      state.mediaLink = ''
     },
-    checkingAudioSuccess(state, action) {
+    checkingMediaSuccess(state, action) {
       state.isRequestCheck = false
       state.isErrorCheck = false
-      state.audioLink = action.payload;
+      state.mediaLink = action.payload;
     },
-    checkingAudioError(state) {
-      state.isRequestCheck = false
+    checkingMediaError(state, action) {
       state.isErrorCheck = true
-      state.audioLink = '';
+      state.isRequestCheck = false
+      state.mediaLink = ''
+    },
+    setIsVideo(state) {
+      state.isVideo = true
+    },
+    setIsAudio(state) {
+      state.isAudio = true
     }
+    // checkingAudioRequest(state) {
+    //   state.isRequestCheck = true
+    //   state.isErrorCheck = false
+    //   state.audioLink = '';
+    // },
+    // checkingAudioSuccess(state, action) {
+    //   state.isRequestCheck = false
+    //   state.isErrorCheck = false
+    //   state.audioLink = action.payload;
+    // },
+    // checkingAudioError(state) {
+    //   state.isRequestCheck = false
+    //   state.isErrorCheck = true
+    //   state.audioLink = '';
+    // }
   }
 })
 
