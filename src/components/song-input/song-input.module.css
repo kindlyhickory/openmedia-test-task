@@ -19,8 +19,53 @@
   color: #C6A827;
 }
 
+.autoCompleteList {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 100%;
+  background: #FFFFFF;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  max-width: 524px;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.autoCompleteListItem {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: #A4A3A4;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all .3s ease-out;
+  box-sizing: border-box;
+}
+
+.autoCompleteListItem:hover {
+  color: #000;
+}
+
+.autoCompleteListItemText {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.autoCompleteListItem:first-child {
+  padding: 0 0 12px 0
+}
+
+.autoCompleteListItem:last-child {
+  border-bottom: none;
+}
+
 .input_label {
-  font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;

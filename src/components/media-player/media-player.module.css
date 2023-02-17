@@ -13,26 +13,37 @@
   --selectedNode-volume: #fff;
 }
 
-.audioPlayer {
+.mediaPlayer {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 620px;
   min-height: 198px;
-  padding: 20px;
+  height: 100%;
   background: #CFD3D6;
+  box-sizing: border-box;
+  /*padding: 0 20px;*/
+}
+
+.mediaPlayerControls {
+  width: 100%;
+  padding: 20px;
   box-sizing: border-box;
 }
 
+.video {
+  max-width: 100%;
+}
+
+
 @media screen and (max-width: 1280px){
-  .audioPlayer {
+  .mediaPlayer {
     width: 480px;
   }
 }
 
 @media screen and (max-width: 768px){
-  .audioPlayer {
+  .mediaPlayer {
     width: 296px;
   }
 }
@@ -46,12 +57,14 @@
 
 .playPause {
   align-self: flex-start;
+  margin: 0 0 45px 0;
 }
 
 .progressBarContainer {
   width: 100%;
   height: 16px;
   position: relative;
+  margin: 0 0 45px 0;
 }
 
 .volumeBarContainer {
@@ -100,12 +113,13 @@
   outline: none;
 }
 
-.audioPlayerContainer {
+.mediaPlayerContainer {
   display: flex;
   flex-direction: column;
 }
 .playAndLoadContainer {
   align-self: flex-start;
+  display: flex;
 }
 
 .backButton {

@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9344190c-d5bc-40b1-8ba9-9059d844d3e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/audio-player/audio-player.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/audio-player/audio-player.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/audio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/audio.js" afterDir="false" />
+    <list default="true" id="9344190c-d5bc-40b1-8ba9-9059d844d3e8" name="Changes" comment="media player">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/blocks/play-audio/__subtitle/_play-audio__subtitle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/blocks/play-audio/__subtitle/_play-audio__subtitle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/blocks/play-audio/_play-audio.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/blocks/play-audio/_play-audio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/blocks/player-container/_player-container.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/blocks/player-container/_player-container.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/audio-player/audio-player.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/media-player/media-player.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/audio-player/audio-player.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/media-player/media-player.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/song-input/song-input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/song-input/song-input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/song-input/song-input.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/song-input/song-input.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/audio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/media.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/audioSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/mediaSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/inputSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/inputSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,11 +61,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676647821782</updated>
-      <workItem from="1676647823090" duration="1928000" />
+      <workItem from="1676647823090" duration="16086000" />
     </task>
+    <task id="LOCAL-00001" summary="media player">
+      <created>1676649994803</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676649994803</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="media player" />
+    <option name="LAST_COMMIT_MESSAGE" value="media player" />
   </component>
 </project>

@@ -1,5 +1,5 @@
 import React from 'react';
-import AudioPlayer from "../audio-player/audio-player";
+import MediaPlayer from "../media-player/media-player";
 import SongInput from "../song-input/song-input";
 import {useSelector} from "react-redux";
 import Loader from "../Loader/loader";
@@ -7,14 +7,14 @@ import Modal from "../modal/modal";
 
 const App = () => {
 
-  const { isRequestCheck, isErrorCheck, mediaLink } = useSelector(state => state.audio);
+  const { isRequestCheck, isErrorCheck, mediaLink } = useSelector(state => state.media);
 
   const { isErrorModalOpened } = useSelector(state => state.errorModal);
 
   return (<>
       {
         mediaLink.length && !isRequestCheck && !isErrorCheck
-        ? <AudioPlayer/>
+        ? <MediaPlayer/>
         : !mediaLink.length && !isRequestCheck
           ? <SongInput/>
           : <Loader/>

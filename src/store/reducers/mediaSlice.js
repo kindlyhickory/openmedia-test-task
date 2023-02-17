@@ -14,8 +14,8 @@ const initialState = {
   isMuted: false,
 }
 
-export const audioSlice = createSlice({
-  name: 'audio',
+export const mediaSlice = createSlice({
+  name: 'media',
   initialState,
   reducers: {
     toggleIsMuted(state) {
@@ -40,6 +40,8 @@ export const audioSlice = createSlice({
       state.isRequestCheck = false
       state.isErrorCheck = false
       state.mediaLink = ''
+      state.isAudio = false
+      state.isVideo = false
       state.isPlaying = false
       state.currentTime = 0
       state.isRadio = false
@@ -84,4 +86,4 @@ export const audioSlice = createSlice({
   }
 })
 
-export default audioSlice.reducer
+export default mediaSlice.reducer
