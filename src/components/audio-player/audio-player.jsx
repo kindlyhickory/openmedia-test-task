@@ -10,7 +10,7 @@ import {set} from "react-hook-form";
 const AudioPlayer = () => {
   const dispatch = useDispatch();
   const { backToInput, setIsPlaying, setCurrentTime, setVolume, setIsRadio,  setReadyState, toggleIsMuted} = audioSlice.actions;
-  const { audioLink, isPlaying, currentTime, volume, isRadio, readyState, isMuted } = useSelector(state => state.audio);
+  const { mediaLink, isPlaying, currentTime, volume, isRadio, readyState, isMuted, isVideo, isAudio} = useSelector(state => state.audio);
 
   const audioPlayer = useRef();
   const progressBar = useRef(null);
@@ -135,7 +135,10 @@ const AudioPlayer = () => {
         dispatch(backToInput())
       }}>← Back</button>
       <div className={styles.audioPlayer}>
-        <audio onLoadedMetadata={setPlayer} onEnded={()=>{isPlaying && playButtonRef.current.click() }} src={audioLink} muted={isMuted} ref={audioPlayer} preload="metadata"></audio>
+        {isVideo
+        ? <video  onLoadedMetadata={setPlayer} onEnded={()=>{isPlaying && playButtonRef.current.click() }} src={mediaLink} muted={isMuted} ref={audioPlayer} preload="metadata"></video>
+        : <audio onLoadedMetadata={setPlayer} onEnded={()=>{isPlaying && playButtonRef.current.click() }} src={mediaLink} muted={isMuted} ref={audioPlayer} preload="metadata"></audio>
+        }
         <div className={styles.playAndLoadContainer}>
           <input ref={playButtonRef} type="image" src={isPlaying ? pause : play} onClick={togglePlayPause} className={styles.playPause}>
           </input>
