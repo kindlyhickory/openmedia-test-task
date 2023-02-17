@@ -18,7 +18,6 @@ const SongInput = () => {
   const { history } = useSelector(state => state.history);
   const { value, isFocused } = useSelector(state => state.input);
   const handleChange = (e) => {
-    console.log(e.target.value);
     dispatch(changeValue(e.target.value));
   }
   function handleFocus(e) {
