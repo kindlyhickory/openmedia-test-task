@@ -18,13 +18,16 @@ const SongInput = () => {
   const { history } = useSelector(state => state.history);
   const { value, isFocused } = useSelector(state => state.input);
   const handleChange = (e) => {
+    console.log(e.target.value);
     dispatch(changeValue(e.target.value));
   }
   function handleFocus(e) {
     dispatch(toggleFocused());
   }
   function handleBlur(e) {
-    dispatch(toggleFocused());
+    setTimeout(()=> {
+      dispatch(toggleFocused())
+    }, 150) ;
   }
   const onSubmit = data => {
     dispatch(checkMediaLink(value));
@@ -54,13 +57,15 @@ const SongInput = () => {
             className={`${styles.url_input} ${errors.url && styles.url_input_type_error}`}
           />
           {
-            !!history.length &&
+            !!history.length && isFocused &&
             <ul className={styles.autoCompleteList}>
               {history.map((url, index) => (
                 url.includes(value) &&
-                  <li key={index} onClick={()=>{
-                    handleChange({target: {value: url}})
-                  }} className={styles.autoCompleteListItem}><p className={styles.autoCompleteListItemText}>{url}</p></li>
+                  <li key={index} className={styles.autoCompleteListItem}><p onClick={(e)=>{
+                    handleChange({target: {
+                      value: url
+                      }})
+                  }} className={styles.autoCompleteListItemText}>{url}</p></li>
               )).reverse()}
             </ul>
           }
