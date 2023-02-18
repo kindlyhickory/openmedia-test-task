@@ -35,6 +35,8 @@ function MediaPlayer() {
     volumeBar.current.style.setProperty('--seek-before-volume-width', `${value}%`);
   };
 
+  // Функция для оптимизированных анимаций. Вызывается перед изменением стилей
+  // и только в то время, когда плеер играет
   const whilePlaying = () => {
     if (mediaPlayer.current.readyState === 0 || mediaPlayer.current.readyState === 1) {
       dispatch(setReadyState(false));
@@ -72,6 +74,8 @@ function MediaPlayer() {
     mediaPlayer.current.currentTime = progressBar.current.value;
     changePlayerCurrentTime();
   };
+
+  // Функция установки значений плееру
   const setPlayer = () => {
     const seconds = Math.floor(mediaPlayer.current.duration);
     if (!Number.isFinite(mediaPlayer.current.duration)) {
@@ -188,7 +192,6 @@ function MediaPlayer() {
           </div>
         </div>
       </div>
-
     </div>
 
   );
