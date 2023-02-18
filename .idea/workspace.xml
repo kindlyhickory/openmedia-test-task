@@ -4,22 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaaccfec-cc5a-454f-b72e-b0cedda00aff" name="Changes" comment="eslint fixes">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="aaaccfec-cc5a-454f-b72e-b0cedda00aff" name="Changes" comment="fixed background-color of back button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/media-player/media-player.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/media-player/media-player.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/song-input/song-input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/song-input/song-input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/song-input/song-input.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/song-input/song-input.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LuJvfgPuAJaDg4tmjRbwsAnpQJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)"
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager" selected="npm.serve">
@@ -72,7 +85,71 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="readme.md">
+      <created>1676713753635</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676713753635</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added few comments">
+      <created>1676714731498</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676714731498</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aaaccfec-cc5a-454f-b72e-b0cedda00aff" name="Changes" comment="added few comments" />
+      <created>1676715267141</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676715267141</updated>
+      <workItem from="1676715268284" duration="2736000" />
+    </task>
+    <task id="LOCAL-00003" summary="changed readme.md">
+      <created>1676715337067</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676715337067</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixed text-align to history list">
+      <created>1676715493579</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676715493579</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixed swiper touch mode">
+      <created>1676715872773</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676715872773</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixed background-color of back button">
+      <created>1676716108136</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676716108136</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="readme.md" />
+    <MESSAGE value="added few comments" />
+    <MESSAGE value="changed readme.md" />
+    <MESSAGE value="fixed text-align to history list" />
+    <MESSAGE value="fixed swiper touch mode" />
+    <MESSAGE value="fixed background-color of back button" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed background-color of back button" />
   </component>
 </project>
