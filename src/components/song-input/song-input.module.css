@@ -17,10 +17,59 @@
   line-height: 16px;
   letter-spacing: -0.3px;
   color: #C6A827;
+  z-index: 1;
+}
+
+.autoCompleteList {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 8px 0 8px;
+  top: 100%;
+  background: #FFFFFF;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  max-width: 524px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.autoCompleteListItem {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  }
+
+.autoCompleteListItemText {
+  transition: all .3s ease-out;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  border: none;
+  white-space: nowrap;
+  background: transparent;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: #A4A3A4;
+}
+
+.autoCompleteListItemText:hover {
+  color: #000;
+}
+.autoCompleteListItem:first-child {
+  padding: 8px 0 12px 0
+}
+
+.autoCompleteListItem:last-child {
+  border-bottom: none;
+  padding-bottom: 8px;
 }
 
 .input_label {
-  font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -49,26 +98,26 @@
 }
 
 @media screen and (max-width: 1280px){
-  .url_input {
+  .url_input, .autoCompleteList {
     width: 440px;
   }
 }
 
 @media screen and (max-width: 1024px){
-  .url_input {
+  .url_input, .autoCompleteList {
     width: 524px;
   }
 }
 
 @media screen and (max-width: 768px){
-  .url_input {
+  .url_input{
     width: 280px;
     height: 64px;
   }
 }
 
 @media screen and (max-width: 480px){
-  .url_input {
+  .url_input, .autoCompleteList {
     width: 232px;
   }
 }

@@ -1,17 +1,16 @@
-import {combineReducers, configureStore} from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
-import audioReducer from './reducers/audioSlice';
-import inputReducer from "./reducers/inputSlice";
-import errorModalReducer from "./reducers/modalSlice"
+import mediaReducer from './reducers/mediaSlice';
+import inputReducer from './reducers/inputSlice';
+import errorModalReducer from './reducers/modalSlice';
+import historyReducer from './reducers/historySlice';
 
 const rootReducer = combineReducers({
-  audio: audioReducer,
+  media: mediaReducer,
   input: inputReducer,
-  errorModal: errorModalReducer
-})
-
-export const setupStore = () => {
-  return configureStore({
-    reducer: rootReducer
-  })
-}
+  errorModal: errorModalReducer,
+  history: historyReducer,
+});
+export const setupStore = () => configureStore({
+  reducer: rootReducer,
+});
