@@ -35,29 +35,31 @@
 }
 
 .autoCompleteListItem {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  }
+
+.autoCompleteListItemText {
+  transition: all .3s ease-out;
   cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  border: none;
+  white-space: nowrap;
+  background: transparent;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.4px;
   color: #A4A3A4;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  transition: all .3s ease-out;
-  box-sizing: border-box;
 }
 
-.autoCompleteListItem:hover {
+.autoCompleteListItemText:hover {
   color: #000;
 }
-
-.autoCompleteListItemText {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
 .autoCompleteListItem:first-child {
   padding: 8px 0 12px 0
 }

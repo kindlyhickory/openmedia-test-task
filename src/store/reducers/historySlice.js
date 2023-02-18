@@ -1,8 +1,8 @@
-import {createSlice} from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   history: [],
-}
+};
 
 export const historySlice = createSlice({
   name: 'history',
@@ -13,8 +13,8 @@ export const historySlice = createSlice({
         state.history = state.history.slice(1, state.history.length);
       }
       state.history.push(action.payload);
-    }
-  }
+    },
+  },
 });
 
-export default historySlice.reducer
+export default historySlice.reducer;

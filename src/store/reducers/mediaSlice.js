@@ -1,4 +1,4 @@
-import {createSlice} from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   isRequestCheck: false,
@@ -9,81 +9,66 @@ const initialState = {
   isPlaying: false,
   currentTime: 0,
   volume: 5,
-  isRadio:false,
+  isRadio: false,
   readyState: true,
   isMuted: false,
-}
+};
 
 export const mediaSlice = createSlice({
   name: 'media',
   initialState,
   reducers: {
     toggleIsMuted(state) {
-      state.isMuted = !state.isMuted
+      state.isMuted = !state.isMuted;
     },
-    setReadyState(state,action) {
-      state.readyState = action.payload
+    setReadyState(state, action) {
+      state.readyState = action.payload;
     },
-    setIsRadio(state, action) {
-      state.isRadio = true
+    setIsRadio(state) {
+      state.isRadio = true;
     },
     setCurrentTime(state, action) {
-      state.currentTime = action.payload
+      state.currentTime = action.payload;
     },
     setVolume(state, action) {
-      state.volume = action.payload
+      state.volume = action.payload;
     },
     setIsPlaying(state, action) {
-      state.isPlaying = action.payload
+      state.isPlaying = action.payload;
     },
     backToInput(state) {
-      state.isRequestCheck = false
-      state.isErrorCheck = false
-      state.mediaLink = ''
-      state.isAudio = false
-      state.isVideo = false
-      state.isPlaying = false
-      state.currentTime = 0
-      state.isRadio = false
-      state.readyState = true
+      state.isRequestCheck = false;
+      state.isErrorCheck = false;
+      state.mediaLink = '';
+      state.isAudio = false;
+      state.isVideo = false;
+      state.isPlaying = false;
+      state.currentTime = 0;
+      state.isRadio = false;
+      state.readyState = true;
     },
-    checkingMediaRequest(state, action) {
-      state.isRequestCheck = true
-      state.isErrorCheck = false
-      state.mediaLink = ''
+    checkingMediaRequest(state) {
+      state.isRequestCheck = true;
+      state.isErrorCheck = false;
+      state.mediaLink = '';
     },
     checkingMediaSuccess(state, action) {
-      state.isRequestCheck = false
-      state.isErrorCheck = false
+      state.isRequestCheck = false;
+      state.isErrorCheck = false;
       state.mediaLink = action.payload;
     },
-    checkingMediaError(state, action) {
-      state.isErrorCheck = true
-      state.isRequestCheck = false
-      state.mediaLink = ''
+    checkingMediaError(state) {
+      state.isErrorCheck = true;
+      state.isRequestCheck = false;
+      state.mediaLink = '';
     },
     setIsVideo(state) {
-      state.isVideo = true
+      state.isVideo = true;
     },
     setIsAudio(state) {
-      state.isAudio = true
-    }
-    // checkingAudioRequest(state) {
-    //   state.isRequestCheck = true
-    //   state.isErrorCheck = false
-    //   state.audioLink = '';
-    // },
-    // checkingAudioSuccess(state, action) {
-    //   state.isRequestCheck = false
-    //   state.isErrorCheck = false
-    //   state.audioLink = action.payload;
-    // },
-    // checkingAudioError(state) {
-    //   state.isRequestCheck = false
-    //   state.isErrorCheck = true
-    //   state.audioLink = '';
-    // }
-  }
-})
+      state.isAudio = true;
+    },
+  },
+});
 
-export default mediaSlice.reducer
+export default mediaSlice.reducer;

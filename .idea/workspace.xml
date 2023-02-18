@@ -4,20 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9344190c-d5bc-40b1-8ba9-9059d844d3e8" name="Changes" comment="media player">
+    <list default="true" id="9344190c-d5bc-40b1-8ba9-9059d844d3e8" name="Changes" comment="fixes">
+      <change afterPath="$PROJECT_DIR$/src/components/modal/modal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blocks/play-audio/__subtitle/_play-audio__subtitle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/blocks/play-audio/__subtitle/_play-audio__subtitle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blocks/play-audio/_play-audio.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/blocks/play-audio/_play-audio.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/blocks/player-container/_player-container.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/blocks/player-container/_player-container.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Loader/loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/loader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/audio-player/audio-player.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/media-player/media-player.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/audio-player/audio-player.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/media-player/media-player.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/media-player/media-player.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/media-player/media-player.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modal/modal.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/song-input/song-input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/song-input/song-input.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/song-input/song-input.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/song-input/song-input.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/audio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/media.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/audioSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/mediaSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/regulars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/regulars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/media.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/media.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/historySlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/historySlice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/inputSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/inputSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/mediaSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/mediaSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/modalSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/modalSlice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +55,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\kindl\\Desktop\\openmedia-test-task\\node_modules\\prettier",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -62,6 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676647821782</updated>
       <workItem from="1676647823090" duration="16086000" />
+      <workItem from="1676705137545" duration="5717000" />
     </task>
     <task id="LOCAL-00001" summary="media player">
       <created>1676649994803</created>
@@ -70,7 +77,35 @@
       <option name="project" value="LOCAL" />
       <updated>1676649994803</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="media queries for history">
+      <created>1676664641659</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676664641659</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixes">
+      <created>1676665349991</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676665349991</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixes">
+      <created>1676665410200</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676665410200</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixes">
+      <created>1676665769395</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676665769395</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,6 +113,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="media player" />
-    <option name="LAST_COMMIT_MESSAGE" value="media player" />
+    <MESSAGE value="media queries for history" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
 </project>
