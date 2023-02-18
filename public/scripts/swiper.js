@@ -1,6 +1,7 @@
 const techSwiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
+  allowTouchMove: false,
   pagination: {
     el: '.swiper-pagination-current',
     clickable: true,
