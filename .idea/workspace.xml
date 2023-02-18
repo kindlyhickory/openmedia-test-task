@@ -4,117 +4,75 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9344190c-d5bc-40b1-8ba9-9059d844d3e8" name="Changes" comment="fixes">
-      <change afterPath="$PROJECT_DIR$/src/components/modal/modal.jsx" afterDir="false" />
+    <list default="true" id="aaaccfec-cc5a-454f-b72e-b0cedda00aff" name="Changes" comment="eslint fixes">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loader/loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/loader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/media-player/media-player.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/media-player/media-player.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modal/modal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/song-input/song-input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/song-input/song-input.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/song-input/song-input.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/song-input/song-input.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/regulars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/regulars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/media.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/media.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/historySlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/historySlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/inputSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/inputSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/mediaSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/mediaSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/modalSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/modalSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2Ls7DgaQCg4wOY4fDMHOIHkpZ2D" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\kindl\\Desktop\\openmedia-test-task\\node_modules\\prettier",
-    "vue.rearranger.settings.migration": "true"
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="RunManager" selected="npm.serve">
+    <configuration name="build-windows" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-windows" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve-windows" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve-windows" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.serve" />
+        <item itemvalue="npm.build-windows" />
+        <item itemvalue="npm.serve-windows" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="9344190c-d5bc-40b1-8ba9-9059d844d3e8" name="Changes" comment="" />
-      <created>1676647821782</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1676647821782</updated>
-      <workItem from="1676647823090" duration="16086000" />
-      <workItem from="1676705137545" duration="5717000" />
-    </task>
-    <task id="LOCAL-00001" summary="media player">
-      <created>1676649994803</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1676649994803</updated>
-    </task>
-    <task id="LOCAL-00002" summary="media queries for history">
-      <created>1676664641659</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1676664641659</updated>
-    </task>
-    <task id="LOCAL-00003" summary="fixes">
-      <created>1676665349991</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1676665349991</updated>
-    </task>
-    <task id="LOCAL-00004" summary="fixes">
-      <created>1676665410200</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1676665410200</updated>
-    </task>
-    <task id="LOCAL-00005" summary="fixes">
-      <created>1676665769395</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1676665769395</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="media player" />
-    <MESSAGE value="media queries for history" />
-    <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
 </project>
